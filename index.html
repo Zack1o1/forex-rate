@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.14.0/css/flag-icons.min.css"/>
+    <title>Forex Rates</title>
+  </head>
+  <body>
+    <main>
+        <!-- heading -->
+      <div id="heading">
+        <h3 class="title">Forex Rates</h3>
+        <p><em>You can get foreign currency buy and sell rates</em></p>
+        <p>Source: Nepal Rastra Bank</p>
+      </div>
+      <!-- forex information buy sell rates -->
+      <section id="forex-information">
+        <div class="forex-date">
+          <p>Exchange Rate for <span class="date">08-11-2023</span></p>
+        </div>
+        <div class="forex-table">
+            <!-- table for forex rate -->
+          <table id="currencyTable">
+            <thead>
+              <tr>
+                <th>Currency</th>
+                <th>Unit</th>
+                <th>Buy</th>
+                <th>Sell</th>
+              </tr>
+            </thead>
+            <tbody id="currencyTableBody">
+                <!-- USD -->
+              <tr>
+                <td>
+                  <p><span class="currency">USD</span> (<span class="name">Name</span>)</p>
+                </td>
+                <td>
+                  <span class="unit">1</span>
+                </td>
+                <td>
+                  <span class="rate buy-rate">132.2</span>
+                </td>
+                <td>
+                  <span class="rate sell-rate">132.2</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span class="currency">USD</span> (<span class="name">Name</span>)</p>
+                </td>
+                <td>
+                  <span class="unit">1</span>
+                </td>
+                <td>
+                  <span class="rate buy-rate">132.2</span>
+                </td>
+                <td>
+                  <span class="rate sell-rate">132.2</span>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p><span class="currency">USD</span> (<span class="name">Name</span>)</p>
+              </td>
+              <td>
+                <span class="unit">1</span>
+              </td>
+              <td>
+                <span class="rate buy-rate">132.2</span>
+              </td>
+              <td>
+                <span class="rate sell-rate">132.2</span>
+              </td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

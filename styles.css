@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black-color-25: #404040;
+    --blue-color: #000099;
+    --orange-color: #994D00; 
+    --dark-red: #8B0000;
+}
+body{
+    background-color: #00000015;
+    
+    font-family: Calibri;
+}
+#forex-information{
+    margin-bottom: 80px;
+}
+#heading{
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+#heading .title{
+    font-weight: normal;
+}
+#heading p:nth-of-type(1){
+    color:var(--black-color-25);
+    font-size: .5em;
+}
+#heading p:nth-of-type(2){
+    color: var(--blue-color);
+    font-size: .56em;
+    padding: 5px;
+}
+.forex-date{
+    font-size: 1.45em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.forex-date p{
+    color:var(--orange-color);
+}
+.forex-date p span{
+    color: var(--dark-red) !important;
+}
+.forex-table{
+   scroll-behavior: smooth;
+}
+table{
+    width: 50%;
+    height: fit-content;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+th{
+    font-size: 1.1em;
+}
+th, td {
+    border: .2px solid #a5a5a570;
+    border-right:none;
+    border-left: none; 
+    padding: 15px; 
+    text-align: left;
+}
+.currency{
+    color: var(--dark-red);
+}
+tbody tr{
+    cursor: text;
+    opacity: .89;
+}
+tbody tr:hover{
+    background-color:#00000011;
+}
+
+.problem{
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5em;
+    color: var(--dark-red);
+}
+.flag{
+    margin-right: 10px;
+    font-size: 1.09em;
+}
+
+@media screen and (max-width:768px) {
+    table{
+        width: 100%;
+    }
+}
+@media screen and (max-width:425px) {
+    table td{
+        font-size: .93em;
+    }
+}
+@media screen and (max-width:400px) {
+    #heading{
+        font-size: 1.5em;
+    }
+    .forex-date{
+        font-size: 1.35em;
+    }
+    th{
+        font-size: 1.01em;
+    }
+    table{
+        width: 95%;
+    }
+    .hidden{
+        display: none;
+    }
+    .flag{
+        font-size: 1em;
+    }
+}
